@@ -18,7 +18,9 @@
     "main": "./dist/index.cjs.js",
     "scripts": {
         "start": "vue serve ./src/xyz-button.vue",
-        "build": "bili --name index --plugin vue --vue.css false",
+        "build": "bili 'src/index.js' --plugin vue",
+        "old-build": "bili --name index --plugin vue --vue.css false",
+        "bili": "bili --format cjs",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "bin": {
