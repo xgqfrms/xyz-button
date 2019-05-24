@@ -1,0 +1,41 @@
+{
+    "name": "xyz-button",
+    "version": "1.0.1",
+    "description": "An Vue UI Button Component!",
+    "private": false,
+    "author": "xgqfrms",
+    "license": "MIT",
+    "keywords": [
+        "vue",
+        "button",
+        "ui",
+        "components",
+        "xyz-button"
+    ],
+    "files": [
+        "dist/*"
+    ],
+    "main": "./dist/index.cjs.js",
+    "scripts": {
+        "start": "vue serve ./src/xyz-button.vue",
+        "build": "bili --name index --plugin vue --vue.css false",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "dev": "dev",
+        "app": "app"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xgqfrms/xyz-button.git"
+    },
+    "bugs": {
+        "url": "https://github.com/xgqfrms/xyz-button/issues"
+    },
+    "homepage": "https://github.com/xgqfrms/xyz-button#readme",
+    "devDependencies": {
+        "bili": "^4.8.0",
+        "rollup-plugin-vue": "^5.0.0",
+        "vue-template-compiler": "^2.6.10"
+    }
+}
