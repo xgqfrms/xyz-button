@@ -15,12 +15,13 @@
     "files": [
         "dist/*"
     ],
-    "main": "./dist/index.cjs.js",
+    "main": "./dist/index.js",
     "scripts": {
         "start": "vue serve ./src/xyz-button.vue",
         "build": "bili --plugin.vue.css true",
         "bili-all": "bili \"src/index.js\" --format cjs --plugin.vue.css true",
         "bili-default": "bili",
+        "bili-string": "bili src/index.js --format cjs --plugin.vue.css true",
         "old-build": "bili --name index --plugin vue --vue.css false",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
