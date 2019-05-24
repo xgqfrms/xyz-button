@@ -19,7 +19,8 @@
     "scripts": {
         "start": "vue serve ./src/xyz-button.vue",
         "build": "bili --plugin.vue.css true",
-        "bili-default": "bili \"src/index.js\" --format cjs",
+        "bili-all": "bili \"src/index.js\" --format cjs --plugin.vue.css true",
+        "bili-default": "bili",
         "old-build": "bili --name index --plugin vue --vue.css false",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
