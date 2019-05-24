@@ -1,6 +1,6 @@
 {
     "name": "xyz-button",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "An Vue UI Button Component!",
     "private": false,
     "author": "xgqfrms",
@@ -15,10 +15,11 @@
     "files": [
         "dist/*"
     ],
-    "main": "./dist/index.js",
+    "main": "./dist/index.min.js",
     "scripts": {
         "start": "vue serve ./src/xyz-button.vue",
-        "build": "bili --plugin.vue.css true",
+        "build": "bili --format cjs-min --no-map --plugin.vue.css true",
+        "build-no-map": "bili --format cjs-min --no-map --plugin.vue.css true",
         "bili-all": "bili \"src/index.js\" --format cjs --plugin.vue.css true",
         "bili-default": "bili",
         "bili-string": "bili src/index.js --format cjs --plugin.vue.css true",

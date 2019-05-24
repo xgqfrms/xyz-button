@@ -1,7 +1,9 @@
+// import vue from "rollup-plugin-vue";
+
 module.exports = {
     banner: true,
     output: {
-        extractCSS: false,
+        extractCSS: true,
     },
     plugins: {
         vue: {

@@ -45,7 +45,7 @@
      *
      */
     export default {
-        // name: "XyzButton",
+        name: "XyzButton",
         props: {
             color: {
                 type: String,
